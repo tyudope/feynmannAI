@@ -81,3 +81,7 @@ next-env.d.ts
 *.swp
 *.swo
 Thumbs.db
+
+
+#.claude
+.claude/
