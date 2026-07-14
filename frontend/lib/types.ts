@@ -12,6 +12,7 @@ export type EvaluationResult = {
   understood: boolean;
   rubric: RubricScore;
   feedback: string;
+  model_explanation: string;
 };
 
 export type Attempt = {

@@ -149,6 +149,7 @@ export default function HomePage() {
             <p>completeness: {result.rubric.completeness} / 10</p>
             <p>simplicity: {result.rubric.simplicity} / 10</p>
           </div>
+          <p className="text-foreground">{result.model_explanation}</p>
           <div className="flex gap-3">
             <button type="button" className="retro-button" onClick={handleTryAgain}>
               Try Again

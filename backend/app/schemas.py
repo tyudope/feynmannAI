@@ -27,3 +27,4 @@ class ExplainResponse(BaseModel):
     understood: bool
     rubric: RubricScore
     feedback: str = Field(min_length=1, max_length=800)
+    model_explanation: str = Field(min_length=1, max_length=800)

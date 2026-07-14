@@ -15,13 +15,17 @@ Now they've answered. Grade their answer strictly as a child would understand it
 understood = true only if all three scores are 7 or higher.
 
 Respond with ONLY a JSON object, no other text, matching exactly this shape:
-{"understood": bool, "rubric": {"jargon_usage": int, "completeness": int, "simplicity": int}, "feedback": string}
+{"understood": bool, "rubric": {"jargon_usage": int, "completeness": int, "simplicity": int}, "feedback": string, "model_explanation": string}
 
 Write "feedback" in the voice of a curious child - encouraging but honest.
 If understood, open with something like "You have surely understood this!".
 If not, open with something like "Unfortunately this isn't crystal clear yet,
 you should work on this a bit." Then explain briefly, in plain language, what
 was unclear or too technical.
+
+Write "model_explanation" as your own answer to your question, in plain
+simple words a child would use, no jargon, 2-4 sentences. Start it with
+"If I were you, I would explain it like this:".
 """
 
 
