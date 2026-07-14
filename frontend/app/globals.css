@@ -1,26 +1,73 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #0a0e0a;
+  --foreground: #33ff66;
+  --foreground-dim: #1f9945;
+  --accent: #ffb000;
+  --border: #33ff66;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-foreground-dim: var(--foreground-dim);
+  --color-accent: var(--accent);
+  --color-border: var(--border);
+  --font-mono: var(--font-vt323);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  border-radius: 0;
+  transition: none;
+  animation: none;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-vt323), "Courier New", monospace;
+  font-size: 20px;
+}
+
+.retro-box {
+  border: 3px solid var(--border);
+  padding: 1.25rem;
+  background: #0a0e0a;
+}
+
+.retro-input {
+  background: #000000;
+  color: var(--foreground);
+  border: 2px solid var(--border);
+  padding: 0.5rem;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.retro-input:focus {
+  outline: 2px solid var(--accent);
+}
+
+.retro-button {
+  background: var(--foreground);
+  color: #000000;
+  border: 2px solid var(--foreground);
+  padding: 0.5rem 1.25rem;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.retro-button:hover {
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+.retro-button:disabled {
+  background: var(--foreground-dim);
+  border-color: var(--foreground-dim);
+  cursor: not-allowed;
 }
