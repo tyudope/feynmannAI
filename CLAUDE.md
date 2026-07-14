@@ -15,14 +15,6 @@ complex vocabulary. The AI grades the explanation against a rubric and returns:
   "If I were you, I would explain it like this:" — so the user has a reference for what
   a clear explanation looks like.
 
-## Screenshots
-
-<!-- Drop screenshots into screenshots/ and they'll render below. -->
-
-| Topic screen | Question / answer screen | Result screen |
-| --- | --- | --- |
-| ![Topic screen](screenshots/01-topic.png) | ![Question and answer screen](screenshots/02-question.png) | ![Result screen](screenshots/03-result.png) |
-
 ### Scoring
 
 Rubric-based, multiple dimensions combined into one overall verdict:
